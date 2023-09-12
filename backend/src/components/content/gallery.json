@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_content_galleries",
+  "info": {
+    "displayName": "gallery",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

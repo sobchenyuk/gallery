@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --dark: #2F2F34;
+}
+
+body {
+    @apply leading-[1.2] text-dark;
+}
+
+.page {
+    @apply bg-[url('/leaf.png')] bg-no-repeat bg-center bg-contain;
+}

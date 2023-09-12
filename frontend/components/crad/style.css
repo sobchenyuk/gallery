@@ -1,0 +1,12 @@
+.card__description {
+    p {
+        @apply opacity-80 font-light text-[15px];
+    }
+}
+
+.card__title {
+    @apply mb-3;
+    p {
+        @apply font-bold text-[18px]
+    }
+}

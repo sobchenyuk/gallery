@@ -1,0 +1,24 @@
+.modal__title {
+    h2 {
+        @apply text-[45px] font-bold leading-[55px];
+        + h2 {
+            @apply text-[color:#00B140]
+        }
+    }
+    p {
+        @apply opacity-80 text-[18px] font-light mt-6;
+    }
+}
+
+.modal__list {
+    @apply mt-8 max-w-[333px] pl-[14px];
+    li {
+        @apply opacity-80 text-[15px] font-light leading-[21px] relative;
+        &:before {
+            @apply content-[''] absolute -left-[14px] top-[4px] w-2.5 h-2.5 rounded-[3px] bg-[color:#00B140];
+        }
+        + li {
+            @apply mt-6;
+        }
+    }
+}

@@ -24,9 +24,6 @@ export default function Home() {
 
   return (
       <div className="page">
-        <Head> 
-            <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-        </Head>
           <div className="mx-auto py-[108px] max-w-[1440px]">
               <div className="flex flex-row flex-wrap gap-y-7 justify-center -mx-7">
                   {posts.length > 0 && (

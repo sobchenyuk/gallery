@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { fetchAPI } from '@/utils/fetch-api';
 import {Card} from "@/components/crad";
 import {ICard} from "@/type/card.interface";
+import Head from 'next/head';
 
 export default function Home() {
   const [posts, setPosts] = useState<ICard[]>([])
@@ -23,6 +24,9 @@ export default function Home() {
 
   return (
       <div className="page">
+        <Head> 
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        </Head>
           <div className="mx-auto py-[108px] max-w-[1440px]">
               <div className="flex flex-row flex-wrap gap-y-7 justify-center -mx-7">
                   {posts.length > 0 && (
